@@ -6,13 +6,7 @@ pipeline {
         jdk 'jdk17'
     }
 
-    stages {     
-        
-        stage('Compile') {
-            steps {
-            sh  "mvn compile"
-            }
-        }
+    stages {
 
         stage('Test') {
             steps {
